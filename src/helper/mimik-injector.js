@@ -6,10 +6,8 @@ import FindNodeByNodeId from '../usecase/find-node-by-node-id';
 
 export default function mimikInject(context, req) {
   const { uMDS } = context.env;
-  const edge = context.edge;
-  const http = context.http;
+  const { edge, http, storage } = context;
   const authorization = req.authorization;
-  const storage = context.storage;
 
   const getNearByDrives = new GetNearbyDrives(uMDS, http, authorization, edge);
   const getProximityDrives = new GetProximityDrives(uMDS, http, authorization, edge);
