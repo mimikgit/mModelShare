@@ -34,7 +34,7 @@ Please visit the [releases section](https://github.com/mimikgit/mModelShare/rele
 
     The following curl command is for specifying the environment variable:
 
-    ```curl -i -H 'Authorization: Bearer **ReplacewithYourToken**' -d '{"name": "games-v1", "image": "games-v1", "env": {"MCM.BASE_API_PATH": "/modelshare/v1", "uMDS": "http://127.0.0.1:8083/mds/v1"} }' http://localhost:8083/mcm/v1/containers```
+    ```curl -i -H 'Authorization: Bearer **ReplacewithYourToken**' -d '{"name": "model-v1", "image": "model-v1", "env": {"MCM.BASE_API_PATH": "/modelshare/v1", "uMDS": "http://127.0.0.1:8083/mds/v1"} }' http://localhost:8083/mcm/v1/containers```
 
 4) The output of the above command will return status code of 200 after the deployment is successful.
 
